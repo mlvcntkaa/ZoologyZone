@@ -58,7 +58,7 @@ nav ul li a:hover{
     font-size: 40px;
     font-family: 'Comic Sans MS', cursive;
     color: #123419;
-    background-image: url('1.png');
+    background-image: url('bg/1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('3.png');
+    background-image: url('bg/3.png');
     padding: 20px;
     position: relative;
     overflow: hidden;
@@ -139,7 +139,7 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('4.png');
+    background-image: url('bg/4.png');
     padding: 20px;
     position: relative;
     height: 100vh;
