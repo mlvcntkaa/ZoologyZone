@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     margin: 0;
@@ -135,7 +136,7 @@ nav ul li a:hover{
     padding-bottom: 50px;
 }
 
-.page2 {
+.page2, .page3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,3 +288,64 @@ nav ul li a:hover{
   box-shadow: 0 0 10px rgba(46, 204, 113, 0.7);
 }
 
+.page3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('bg/5.png');
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+}
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  color: #123419;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  color: #123419;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 20px;
+}
+
+.cp {
+  text-align: center;
+}
+
+.cp button {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(52, 152, 219, 0); /* Transparent background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cp button:hover {
+  background-color: #3498db;
+}
+
+.cp h4 {
+  font-size: 25px;
+  color: #123419;
+  margin: 0;
+}
+
+.cp p {
+  font-size: 20px;
+  color: #123419;
+}
+
+.cp svg{
+  margin-top: 10px;
+}
