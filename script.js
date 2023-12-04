@@ -1,3 +1,7 @@
+String.prototype.capitalize = function () {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   const slideIndex = {};
 
@@ -54,8 +58,44 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initialize and start animations for each section
   const sections = ['darat', 'laut', 'udara'];
   sections.forEach(initCarousel);
-});
 
-String.prototype.capitalize = function () {
-  return this.charAt(0).toUpperCase() + this.slice(1);
-};
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Menghentikan pengiriman formulir
+
+    // Kirim formulir menggunakan Fetch API atau AJAX jika Anda ingin melakukan validasi atau pengiriman tanpa mengganti halaman
+    // Contoh menggunakan Fetch API:
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+    })
+    .then(response => {
+      if (response.ok) {
+        // Ulasan terkirim dengan sukses
+        showNotification("Ulasan Anda telah terkirim! Terima kasih!");
+      } else {
+        // Gagal mengirim ulasan
+        showNotification("Gagal mengirim ulasan. Silakan coba lagi.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      showNotification("Terjadi kesalahan. Silakan coba lagi.");
+    });
+  });
+
+  function showNotification(message) {
+    // Tampilkan notifikasi
+    const notification = document.createElement("div");
+    notification.className = "notification";
+    notification.textContent = message;
+
+    document.body.appendChild(notification);
+
+    // Hapus notifikasi setelah beberapa detik (opsional)
+    setTimeout(() => {
+      document.body.removeChild(notification);
+    }, 5000); // Hapus notifikasi setelah 5 detik
+  }
+});

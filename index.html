@@ -8,7 +8,7 @@
     <title>Zoology zone</title>
 </head>
 <body>
-    <nav>
+    <header>
         <div class="wrapper">
             <div class="logo"> Zoology zone </div>
             <div class="menu">
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </header>
         <div class="judul">
             <div class="desc">
                 <h1> Welcome to <br> Zoology zone</h1>
@@ -167,6 +167,41 @@
 
           </div>
         </div>
+    </section>
+    </div>
+
+    <div class="page4">
+      <!-- Ulasan -->
+      <section id="ulasan">
+    <h2>Formulir Ulasan Website</h2>
+
+    <form action="zoology_zone.php" method="post">
+        <label for="nama">Nama Anda:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email Anda:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pertama_kali">Apakah ini pertama kali Anda mengunjungi website kami?</label>
+        <select id="pertama_kali" name="pertama_kali">
+            <option value="ya">Ya</option>
+            <option value="tidak">Tidak</option>
+        </select>
+
+        <h3>Navigasi dan Desain</h3>
+        <label for="navigasi">Seberapa mudah Anda menavigasi website kami? (Skala 1-5)</label>
+        <input type="number" id="navigasi" name="navigasi" min="1" max="5" required>
+
+        <label for="desain">Bagaimana pendapat Anda tentang desain keseluruhan website?</label>
+        <textarea id="desain" name="desain" rows="4" required></textarea>
+
+        <!-- Tambahkan bagian lainnya sesuai kebutuhan -->
+
+        <label for="saran">Saran dan Komentar Tambahan:</label>
+        <textarea id="saran" name="saran" rows="4"></textarea>
+
+        <input type="submit" value="Kirim Ulasan">
+    </form>
     </section>
     </div>
     <script src="script.js"></script>
