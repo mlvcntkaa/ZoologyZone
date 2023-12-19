@@ -167,7 +167,7 @@ header ul li a:hover{
 
 @media (max-width: 700px){
   .judul {
-    width: 50vh;
+    width: 46,5vh;
     height: fit-content;
     font-size: 15px;
     padding-top: 40px;
@@ -215,10 +215,9 @@ header ul li a:hover{
 }
 @media screen and (max-width: 700px) {
   .page1 {
-    width: 50vh;
+    width: 46,5vh;
     height: 30vh;
-    padding: 0;
-  }
+    padding: 0;}
   .tmp {
     height: 25vh;
     /* flex-direction: column; */
@@ -304,7 +303,7 @@ header ul li a:hover{
 
 @media screen and (max-width: 700px) {
   .page2 {
-    width: 50vh;
+    width: 46,5vh;
     height: 35vh;
     padding-top: 10px;
     margin: 0%;
@@ -485,7 +484,7 @@ margin-top: 10px;
 }
 @media screen and (max-width: 700px) {
   .page3 {
-    width: 50vh;
+    width: 46,5vh;
     height: 32vh;
   } 
   .section-title h2 {
