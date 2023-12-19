@@ -98,4 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.removeChild(notification);
     }, 5000); // Hapus notifikasi setelah 5 detik
   }
+  
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainMenu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', function () {
+    mainMenu.classList.toggle('active');
+  });
 });
+
