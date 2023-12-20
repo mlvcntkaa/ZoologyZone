@@ -338,12 +338,12 @@ header ul li a:hover{
   .page2 {
     width: 46,5vh;
     height: 35vh;
-    padding-top: 5px;
+    padding-top: 10px;
     margin: 0%;
   }
   .jdl-ktg {
     font-size: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 0px;
     
   }
@@ -354,7 +354,7 @@ header ul li a:hover{
     margin: 5px;
   }
   .card img {
-    height: 70px;
+    height: 75px;
   }
   .card-body {
     padding: 0px;
@@ -527,7 +527,7 @@ margin-top: 10px;
     }
     .section-title p {
     padding-top: 0%;
-    font-size: 15px;
+    font-size: 13px;
     }
     
     .cp {
