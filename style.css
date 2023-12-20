@@ -120,11 +120,25 @@ header ul li a {
   text-align: center;
   padding: 0px 16px 0px 16px ;
   text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Add color transition */
+}
+header ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffc519;
+  transition: all 0.3s ease-in-out;
 }
 
 header ul li a:hover{
-  text-decoration : underline;
+  color: #ff8c00; /* Change color on hover */
 }
+
 
 .judul {
   font-size: 36px;
@@ -146,8 +160,16 @@ header ul li a:hover{
 .judul h1 {
   padding-bottom: 10px; 
   margin: 0; 
+  animation: shake 0.5s infinite alternate; /* Animasi bergoyang selama 0.5 detik */
 }
-
+@keyframes shake {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px); /* Bergoyang ke kanan */
+  }
+}
 .btn-jdl {
   font-size: 20px;
   font-family: 'Averia Sans Libre', sans-serif;
@@ -157,10 +179,15 @@ header ul li a:hover{
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer; /* Add a pointer cursor on hover */
 }
-.btn-jdl:hover{
-  text-decoration : underline;
+
+.btn-jdl:hover {
+  background-color: #1a4b2a;
+  color: #fff;
 }
+
 .desc {
   padding-bottom: 100px;
 }
@@ -206,8 +233,14 @@ header ul li a:hover{
   padding-top: 50px;
   padding-bottom: 80px;
   margin: 0;
+  transform: scale(1);
+  animation: pulse 1.5s ease-in-out infinite alternate;
 }
 
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
 .zoo{
   padding-right: 20px;
   padding-left: 20px;
@@ -318,18 +351,17 @@ header ul li a:hover{
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
   }
   .card img {
     height: 80px;
   }
-  .card-title{
-    margin: 0px;
-  }
   .card-body {
-    padding: 0%;
+    padding: 0px;
   }
-
+  .card-title{
+    padding-bottom: 20px;
+  }
 }
 
 .klasifikasi {
@@ -355,6 +387,8 @@ transition: transform 0.5s ease-in-out;
 width: 100%;
 height: auto;
 }
+
+
 
 .prevBtn,
 .nextBtn {
@@ -488,12 +522,12 @@ margin-top: 10px;
     height: 32vh;
   } 
   .section-title h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 0px;
     }
     .section-title p {
     padding-top: 0%;
-    font-size: 10px;
+    font-size: 15px;
     }
     
     .cp {
@@ -502,11 +536,11 @@ margin-top: 10px;
     }
     
     .cp h4 {
-    font-size: 10px;
+    font-size: 15px;
     }
     
     .cp p {
-    font-size: 8px;
+    font-size: 10px;
     }
     .cp svg {
       margin: 0%;

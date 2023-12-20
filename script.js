@@ -105,5 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
   menuToggle.addEventListener('click', function () {
     mainMenu.classList.toggle('active');
   });
+
+  
 });
 
