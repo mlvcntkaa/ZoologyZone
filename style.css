@@ -536,11 +536,11 @@ margin-top: 10px;
     }
     
     .cp h4 {
-    font-size: 15px;
+    font-size: 13px;
     }
     
     .cp p {
-    font-size: 10px;
+    font-size: 8px;
     }
     .cp svg {
       margin: 0%;
@@ -597,6 +597,13 @@ input[type="submit"]:hover {
   }
 
   @media screen and (max-width : 700px) {
+    .page4{
+      height: fit-content;
+      padding: 10px;
+    }
+    .page4 h2 {
+      font-size: 20px;
+    }
     .logo .btn-jdl:hover.page1 .tmp{
       width: 100;
     }
